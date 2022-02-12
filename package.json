@@ -19,6 +19,7 @@
   "dependencies": {
     "bulma": "^0.9.3",
     "lite-server": "^2.6.1",
-    "browser-sync": "^2.27.7"
+    "browser-sync": "^2.27.7",
+    "bulma-start": "^0.0.4"
   }
 }
