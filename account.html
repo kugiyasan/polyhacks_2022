@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Compte</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">  
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+      <div class="field">
+        <label class="label">Nom</label>
+        <div class="control">
+          <input class="input" type="text" id="nameField">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger">This email is invalid</p>
+      </div>
+      
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="#">terms and conditions</a>
+          </label>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Yes
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            No
+          </label>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+    </main>
+
+
+
+    <script type="text/javascript" src="./src/js/main.js"></script>
+    <script src="js/vendor/modernizr-3.11.8.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+  
+  </html>
+  

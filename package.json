@@ -16,8 +16,8 @@
   "bugs": {
     "url": "https://github.com/kugiyasan/polyhacks_2022/issues"
   },
-  "homepage": "https://github.com/kugiyasan/polyhacks_2022#readme",
-  "devDependencies": {
+  "dependencies": {
+    "bulma": "^0.9.3",
     "lite-server": "^2.6.1"
   }
 }
