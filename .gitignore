@@ -1,6 +1,2 @@
-**/.DS_Store
-archive
-node_modules
-packages
-dist/package-lock.json
-src/package-lock.json
+node_modules/
+package-lock.json
