@@ -34,10 +34,6 @@ app.use(express.static("public"));
 //   res.sendFile(path.resolve(__dirname, "index.html"));
 // });
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve(__dirname, "index.html"));
-// });
-
 app.get("/getCards.json", (req, res) => {
   const number = req.body.number;
   const url = "https://placeimg.com/600/300/animals";
@@ -72,6 +68,10 @@ app.post("/signup", (req, res) => {
     res.redirect("/app.html");
     // res.redirect("/signup.html");
   }
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "public", "404.html"));
 });
 
 const port = process.env.PORT || 5000;
