@@ -30,15 +30,38 @@
     <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
     <link rel="stylesheet" href="./src/css/tinder.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script defer>
-      $(function () {
-        $("#nav-placeholder").load("navbar.html");
-      });
-    </script>
   </head>
 
   <body>
-    <div id="nav-placeholder"></div>
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav-placeholder">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+          Pet Matcher
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="signup.html">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light" href="login.html">
+                Sign In
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <div class="container">
       <div class="notification">
