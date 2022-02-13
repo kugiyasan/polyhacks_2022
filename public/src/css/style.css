@@ -129,7 +129,29 @@ textarea {
   height: 94vh;
 }
 
+.notification {
+  background-color: pink;
+}
 
+section.hero.is-primary {
+  background-color:rgb(216, 57, 81);
+}
+
+article.tile.is-child.is-primary {
+  background-color: palevioletred;
+}
+
+article.tile.is-child.is-info {
+  background-color: palevioletred;
+}
+
+article.tile.is-success {
+  background-color: rgb(216, 57, 81);
+}
+
+article.tile.is-warning {
+  background-color: rgb(245, 59, 59);
+}
 
 
 /* ==========================================================================
