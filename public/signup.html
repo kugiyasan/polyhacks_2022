@@ -9,20 +9,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-    <style>
-      .custom-bg{
-      background-color:rgba(134, 90, 138, 0.493);
-    }
-      </style>
-
     <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <!-- Bulma Version 0.9.0-->
     <link rel="stylesheet" type="text/css" href="../css/login.css">
-    <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel = "icon" href = 
     "data/img/logo.png" 
-            type = "image/x-icon">   
+    type = "image/x-icon">   
+    <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 
 <body>
@@ -91,9 +85,14 @@
                             <button class="button is-block is-info is-large is-fullwidth">Create Account <i class="fa fa-sign-in" aria-hidden="true"></i></button>
                         </form>
                     </div>
-                    <p class="has-text-black">
-                        <a href="login.html">You already have an account?</a> &nbsp;&nbsp;
-                    </p>
+                    <!--p class="has-text-black">
+                        <a class="black-link" href="login.html">You already have an account?</a> &nbsp;&nbsp;
+                    </p-->
+                    <a class="link-button" href="signup.html">
+                      <button class="button is-block is-info">
+                        You already have an account?
+                      </button>
+                    </a>
                 </div>
             </div>
         </div>
