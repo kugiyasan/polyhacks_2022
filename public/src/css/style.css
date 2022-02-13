@@ -153,6 +153,13 @@ article.tile.is-warning {
   background-color: rgb(245, 59, 59);
 }
 
+a.button.is-primary {
+  background-color: palevioletred;
+}
+
+a.button.is-primary:hover {
+  background-color: rgb(245, 59, 59);
+}
 
 /* ==========================================================================
    Helper classes
