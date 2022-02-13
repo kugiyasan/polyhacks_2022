@@ -4,26 +4,26 @@ const path = require("path");
 const app = express();
 
 let logger = (req, res, next) => {
-    let current_datetime = new Date();
-    let formatted_date =
-      current_datetime.getFullYear() +
-      "-" +
-      (current_datetime.getMonth() + 1) +
-      "-" +
-      current_datetime.getDate() +
-      " " +
-      current_datetime.getHours() +
-      ":" +
-      current_datetime.getMinutes() +
-      ":" +
-      current_datetime.getSeconds();
-    let method = req.method;
-    let url = req.url;
-    let status = res.statusCode;
-    let log = `[${formatted_date}] ${method}:${url} ${status}`;
-    console.log(log);
-    next();
-  };
+  let current_datetime = new Date();
+  let formatted_date =
+    current_datetime.getFullYear() +
+    "-" +
+    (current_datetime.getMonth() + 1) +
+    "-" +
+    current_datetime.getDate() +
+    " " +
+    current_datetime.getHours() +
+    ":" +
+    current_datetime.getMinutes() +
+    ":" +
+    current_datetime.getSeconds();
+  let method = req.method;
+  let url = req.url;
+  let status = res.statusCode;
+  let log = `[${formatted_date}] ${method}:${url} ${status}`;
+  console.log(log);
+  next();
+};
 
 app.use(logger);
 app.use(express.json());
@@ -37,9 +37,27 @@ app.use(express.static("public"));
 //   res.sendFile(path.resolve(__dirname, "index.html"));
 // });
 
-app.post("/login.html", (req, res) => {
-    console.log("POST /login.html");
-  res.redirect("/app.html");
+app.post("/login", (req, res) => {
+  console.log(req.query, req.body);
+  const { username } = req.body;
+  const nameInDB = true;
+  if (nameInDB) {
+    res.redirect("/app.html");
+  } else {
+    // TODO make an error, or just create a account lmao
+    res.redirect("/login.html");
+  }
+});
+app.post("/signup", (req, res) => {
+  console.log(req.query, req.body);
+  const { username, phoneNumer } = req.body;
+  const validData = true;
+  if (nameInDB) {
+    res.redirect("/app.html");
+  } else {
+    // TODO make an error, or just create a account lmao
+    res.redirect("/signup.html");
+  }
 });
 
 const port = process.env.PORT || 5000;
