@@ -11,7 +11,7 @@ npm start
 npm run dev
 ```
 
-## To access the different pages :
+## To access the different pages
 
 - The title page is loaded as it should at the start of the website
 - The signup/login pages are loaded when clicking on the buttons of the same name, but they don't work.
