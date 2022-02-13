@@ -95,6 +95,8 @@ body {
 .tinder--card img {
   max-width: 100%;
   pointer-events: none;
+  height: 300px;
+  object-fit: cover;
 }
 
 .tinder--card h3 {
