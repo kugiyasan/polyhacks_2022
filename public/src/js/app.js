@@ -37,6 +37,7 @@ const getNewCards = async (number) => {
   for (const cardData of data) {
     const card = createCard(cardData.name, cardData.description, cardData.img);
     tinderCards.appendChild(card);
+    initCard(card);
   }
 };
 
