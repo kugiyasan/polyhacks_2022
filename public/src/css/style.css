@@ -130,12 +130,18 @@ textarea {
   height: 94vh;
 }
 
-.notification {
+div.notification {
   background-color: pink;
+  border-radius: 0px;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto 10px auto;
+  flex-wrap: wrap;
 }
 
 section.hero.is-primary {
   background-color:rgb(216, 57, 81);
+  width: 100%;
 }
 
 article.tile.is-child.is-primary {
@@ -148,6 +154,9 @@ article.tile.is-child.is-info {
 
 article.tile.is-success {
   background-color: rgb(216, 57, 81);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 article.tile.is-warning {
@@ -189,6 +198,7 @@ a.link-button {
 a.navbar-item:hover {
   color: palevioletred;
 }
+
 
 /* ==========================================================================
    Helper classes
