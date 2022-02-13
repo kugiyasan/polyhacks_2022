@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,12 @@
     "url": "https://github.com/kugiyasan/polyhacks_2022/issues"
   },
   "dependencies": {
-    "bulma": "^0.9.3",
     "browser-sync": "^2.27.7",
+    "bulma": "^0.9.3",
     "bulma-start": "^0.0.4",
-    "express": "^4.17.2",
+    "express": "^4.17.2
+  },
+  "devDependencies": {
     "nodemon": "^2.0.15"
   }
 }
