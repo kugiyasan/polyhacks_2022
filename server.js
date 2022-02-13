@@ -38,6 +38,24 @@ app.use(express.static("public"));
 //   res.sendFile(path.resolve(__dirname, "index.html"));
 // });
 
+app.get("/getCards.json", (req, res) => {
+    const number = req.body.number;
+    const url = "https://placeimg.com/600/300/animals";
+    const data = [
+        {
+            name: "Bob",
+            description: "He's a hot dog",
+            img: url,
+        },
+        {
+            name: "Ligma",
+            description: "Ballz",
+            img: url,
+        },
+    ];
+  res.send(JSON.stringify(data));
+});
+
 app.post("/login", (req, res) => {
   console.log(req.query, req.body);
   const { username } = req.body;
@@ -49,11 +67,12 @@ app.post("/login", (req, res) => {
     res.redirect("/login.html");
   }
 });
+
 app.post("/signup", (req, res) => {
   console.log(req.query, req.body);
   const { username, phoneNumer } = req.body;
   const validData = true;
-  if (nameInDB) {
+  if (validData) {
     res.redirect("/app.html");
   } else {
     // TODO make an error, or just create a account lmao
