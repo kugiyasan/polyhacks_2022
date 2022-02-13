@@ -16,70 +16,77 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/style.css">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <script src="https://kit.fontawesome.com/12540e19ff.js" crossorigin="anonymous"></script>
   <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
   <script defer src="./src/js/accountPage.js"></script>
 </head>
 
 <body>
-    <main>
-      <div class="container">
-
+  <main>
+    <div class="container" id="accountGrid">
+      <div>
         <div class="field">
           <label class="label">Nom</label>
           <p class="control has-icons-left">
             <input class="input" type="text" id="nameField">
             <span class="icon is-left">
-              <i class="fas fa-user-md"></i>
+              <i class="fas fa-user"></i>
             </span>
           </p>
         </div>
-  
+
         <div class="field">
           <label class="label">Téléphone</label>
-          <p class="control has-icons-left">  
+          <p class="control has-icons-left">
             <input class="input" type="text" id="nameField">
             <span class="icon is-left">
               <i class="fas fa-phone"></i>
             </span>
           </p>
         </div>
-  
-        <div class="field" id="description">
-          <textarea class="textarea" placeholder="Hello world"></textarea>
-        </div>
-        
-        <!--div class="field">
-          <label class="label">Description</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+      </div>
+
+      <div>
+        <h2 class="title is-2">Mes animaux</h2>
+        <div id="animalGrid">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                John Smith
+              </p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img class="animalImage" src="data/img/dog1.jpg">
+              </figure>
+            </div>
           </div>
-        </div-->
-        
-        <div class="field">
-          <div class="control">
-            <label class="checkbox">
-              <input type="checkbox">
-              I agree to the <a href="#">terms and conditions</a>
-            </label>
+
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                John Smith
+              </p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img class="animalImage" src="data/img/dog2.jpg">
+              </figure>
+            </div>
           </div>
+
         </div>
       </div>
-    </main>
+    </div>
 
+  </main>
+</body>
 
-
-    <script type="text/javascript" src="./src/js/main.js"></script>
-    <script src="js/vendor/modernizr-3.11.8.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
-  
-  </html>
-  
+</html>
