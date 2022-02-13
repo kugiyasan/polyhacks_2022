@@ -140,3 +140,11 @@
   .fa-remove {
     color: #CDD6DD;
   }
+
+  article.tile {
+    border-radius: 8px;
+  }
+
+  section.hero {
+    border-radius: 8px;
+  }
