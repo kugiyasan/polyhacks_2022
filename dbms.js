@@ -6,7 +6,7 @@ let users = require(usersPath);
 let pets = require(petsPath);
 
 const getUser = (username) => {
-  const user = users.users[username];
+  const user = users.users[username] || {};
   user.name = username;
   return user;
 };
