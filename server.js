@@ -39,20 +39,10 @@ app.use(express.static("public"));
 // });
 
 app.get("/getCards.json", (req, res) => {
-    const number = req.body.number;
-    const url = "https://placeimg.com/600/300/animals";
-    const data = [
-        {
-            name: "Bob",
-            description: "He's a hot dog",
-            img: url,
-        },
-        {
-            name: "Ligma",
-            description: "Ballz",
-            img: url,
-        },
-    ];
+  const number = req.body.number;
+  const url = "https://placeimg.com/600/300/animals";
+  const data = dbms.getCardsForUser("Zara", number || 5);
+  console.log(data);
   res.send(JSON.stringify(data));
 });
 
@@ -64,19 +54,23 @@ app.post("/login", (req, res) => {
     res.redirect("/app.html");
   } else {
     // TODO make an error, or just create a account lmao
-    res.redirect("/login.html");
+    dbms.newUser(user, "1234567890");
+    res.redirect("/app.html");
+    // res.redirect("/login.html");
   }
 });
 
 app.post("/signup", (req, res) => {
   console.log(req.query, req.body);
-  const { username, phoneNumer } = req.body;
+  const { username, phoneNumber } = req.body;
   const validData = true;
   if (validData) {
     res.redirect("/app.html");
   } else {
     // TODO make an error, or just create a account lmao
-    res.redirect("/signup.html");
+    dbms.newUser(user, phoneNumber);
+    res.redirect("/app.html");
+    // res.redirect("/signup.html");
   }
 });
 

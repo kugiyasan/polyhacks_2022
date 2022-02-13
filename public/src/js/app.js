@@ -32,7 +32,7 @@ const createCard = (name, description, imgSrc) => {
 </div> */
 
 const getNewCards = async (number) => {
-  const res = await fetch(`/getCards.json?number=${number}`,);
+  const res = await fetch(`/getCards.json?number=${number}`);
   const data = await res.json();
   for (const cardData of data) {
     const card = createCard(cardData.name, cardData.description, cardData.img);
