@@ -71,7 +71,7 @@ app.post("/signup", (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "public", "404.html"));
+  res.redirect("/404.html");
 });
 
 const port = process.env.PORT || 5000;
