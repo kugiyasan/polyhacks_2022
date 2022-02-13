@@ -1,79 +1,113 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Login to PetMatch</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" type="text/css" href="../css/login.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-</head>
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+    />
+  </head>
 
-<body>
-    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav-placeholder">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
-            Pet Matcher
-          </a>
-  
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-  
-        <div id="navbarBasicExample" class="navbar-menu">
-  
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary" href="signup.html">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light" href="login.html">
-                  Sign In
-                </a>
-              </div>
+  <body>
+    <nav
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+      id="nav-placeholder"
+    >
+      <div class="navbar-brand">
+        <a
+          class="navbar-item"
+          href="index.html"
+          style="
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+              sans-serif;
+          "
+        >
+          Pet Matcher
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="signup.html">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light" href="login.html"> Sign In </a>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
     <section class="hero is-success is-fullheight">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="column is-4 is-offset-4">
-                    <h3 class="title has-text-black">Login</h3>
-                    <hr class="login-hr">
-                    <p class="subtitle has-text-black">Please login to get access to PetMatch.</p>
-                    <div class="box">
-                        <figure class="avatar">
-                            <img src="data/img/logoLogin.png">
-                        </figure>
-                        <p class="subtitle has-text-black"> </p>
-                        <p class="subtitle has-text-black">Please enter your name:</p>
-                        <form action="app.html"> <!-- linker avec notre base  -->
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input is-large" type="text" placeholder="Your Name" autofocus="">
-                                </div>
-                            </div>
-                            <button class="button is-block is-info is-large is-fullwidth">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
-                        </form>
-                    </div>
-                    <p class="has-text-black">
-                        <a href="signup.html">Sign Up if you don't have an account.</a> &nbsp;·&nbsp;
-                    </p>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-4 is-offset-4">
+            <h3 class="title has-text-black">Login</h3>
+            <hr class="login-hr" />
+            <p class="subtitle has-text-black">
+              Please login to get access to PetMatch.
+            </p>
+            <div class="box">
+              <figure class="avatar">
+                <img src="data/img/logoLogin.png" />
+              </figure>
+              <p class="subtitle has-text-black"></p>
+              <p class="subtitle has-text-black">Please enter your name:</p>
+              <form action="login" method="post">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-large"
+                      type="text"
+                      placeholder="Your Name"
+                      autofocus=""
+                      id="username" 
+                      name="username" 
+                    />
+                  </div>
                 </div>
+                <button class="button is-block is-info is-large is-fullwidth">
+                  Login <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </button>
+              </form>
             </div>
+            <p class="has-text-black">
+              <a href="signup.html">Sign Up if you don't have an account.</a>
+              &nbsp;·&nbsp;
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- <script async type="text/javascript" src="s/js/bulma.js"></script> -->
-</body>
-
+  </body>
 </html>

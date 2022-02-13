@@ -4,26 +4,26 @@ const path = require("path");
 const app = express();
 
 let logger = (req, res, next) => {
-    let current_datetime = new Date();
-    let formatted_date =
-      current_datetime.getFullYear() +
-      "-" +
-      (current_datetime.getMonth() + 1) +
-      "-" +
-      current_datetime.getDate() +
-      " " +
-      current_datetime.getHours() +
-      ":" +
-      current_datetime.getMinutes() +
-      ":" +
-      current_datetime.getSeconds();
-    let method = req.method;
-    let url = req.url;
-    let status = res.statusCode;
-    let log = `[${formatted_date}] ${method}:${url} ${status}`;
-    console.log(log);
-    next();
-  };
+  let current_datetime = new Date();
+  let formatted_date =
+    current_datetime.getFullYear() +
+    "-" +
+    (current_datetime.getMonth() + 1) +
+    "-" +
+    current_datetime.getDate() +
+    " " +
+    current_datetime.getHours() +
+    ":" +
+    current_datetime.getMinutes() +
+    ":" +
+    current_datetime.getSeconds();
+  let method = req.method;
+  let url = req.url;
+  let status = res.statusCode;
+  let log = `[${formatted_date}] ${method}:${url} ${status}`;
+  console.log(log);
+  next();
+};
 
 app.use(logger);
 app.use(express.json());
@@ -37,8 +37,8 @@ app.use(express.static("public"));
 //   res.sendFile(path.resolve(__dirname, "index.html"));
 // });
 
-app.post("/login.html", (req, res) => {
-    console.log("POST /login.html");
+app.post("/login", (req, res) => {
+  console.log(req);
   res.redirect("/app.html");
 });
 
