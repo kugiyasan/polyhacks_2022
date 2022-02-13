@@ -41,7 +41,7 @@ app.use(express.static("public"));
 app.get("/getCards.json", (req, res) => {
   const number = req.body.number;
   const url = "https://placeimg.com/600/300/animals";
-  const data = dbms.getCardsForUser("Zara", number);
+  const data = dbms.getCardsForUser("Zara", number || 5);
   console.log(data);
   res.send(JSON.stringify(data));
 });

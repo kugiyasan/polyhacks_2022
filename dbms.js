@@ -19,6 +19,7 @@ const getCardsForUser = (username, number) => {
     const i = (keys.length * Math.random()) << 0;
     const key = keys[i];
     const pet = pets.pets[key];
+    // ! This is always false
     if (pet.user_id === username) {
       continue;
     }
