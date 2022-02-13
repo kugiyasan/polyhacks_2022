@@ -1,0 +1,20 @@
+{
+    "User":[
+        { "id":1,"name":"Abigail", "phone":1111111111 },
+        { "id":1,"name":"Bruno", "phone":2222222222 },
+        { "id":1,"name":"Charlie", "phone":3333333333 }
+    ],
+    "Pet":[
+        { "id":1,"name":"Angel","user_id":1  },
+        { "id":2,"name":"Bob", "user_id":1 },
+        { "id":3,"name":"Cici", "user_id":1 },
+        { "id":4,"name":"Dig", "user_id":1 },
+        { "id":5,"name":"Em", "user_id":1 },
+        { "id":6,"name":"Fae", "user_id":2 },
+        { "id":7,"name":"Gaga", "user_id":2 },
+        { "id":8,"name":"Hugo", "user_id":2 },
+        { "id":9,"name":"Iris", "user_id":2 },
+        { "id":10,"name":"Jupiter", "user_id":3 },
+        { "id":11,"name":"Karma", "user_id":3 }
+    ]
+}
