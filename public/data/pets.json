@@ -1,15 +1,65 @@
 {
-  "pets":[
-    { "id":1,"name":"Angel","user_id":1  },
-    { "id":2,"name":"Bob", "user_id":1 },
-    { "id":3,"name":"Cici", "user_id":1 },
-    { "id":4,"name":"Dig", "user_id":1 },
-    { "id":5,"name":"Em", "user_id":1 },
-    { "id":6,"name":"Fae", "user_id":2 },
-    { "id":7,"name":"Gaga", "user_id":2 },
-    { "id":8,"name":"Hugo", "user_id":2 },
-    { "id":9,"name":"Iris", "user_id":2 },
-    { "id":10,"name":"Jupiter", "user_id":3 },
-    { "id":11,"name":"Karma", "user_id":3 }
-]
+  "pets": {
+    "Angel": {
+      "description": "Cute little dog",
+      "user_id": 1,
+      "name": "Angel",
+      "img": "/data/img/dog5.jpg"
+    },
+    "Bob": {
+      "description": "He's a hot dog",
+      "user_id": 1,
+      "name": "Bob",
+      "img": "/data/img/dog3.jpg"
+    },
+    "Cici": {
+      "description": "Cute little dog",
+      "user_id": 1,
+      "name": "Cici",
+      "img": "/data/img/dog4.jpg"
+    },
+    "Dig": {
+      "description": "Big boy",
+      "user_id": 1,
+      "name": "Dig",
+      "img": "/data/img/dog1.jpg"
+    },
+    "Em": {
+      "description": "Cute little cat",
+      "user_id": 1,
+      "name": "Em",
+      "img": "/data/img/dog3.jpg"
+    },
+    "Fae": {
+      "description": "Cute little dog",
+      "user_id": 2,
+      "name": "Fae",
+      "img": "/data/img/dog1.jpg"
+    },
+    "Gaga": {
+      "description": "Cute little dog",
+      "user_id": 2,
+      "name": "Gaga",
+      "img": "/data/img/dog1.jpg"
+    },
+    "Hugo": { "description": "Cute little dog", "user_id": 2 },
+    "Iris": {
+      "description": "Cute little cat",
+      "user_id": 2,
+      "name": "Iris",
+      "img": "/data/img/dog2.jpg"
+    },
+    "Jupite": {
+      "description": "Cute little dog",
+      "user_id": 3,
+      "name": "Jupite",
+      "img": "/data/img/dog2.jpg"
+    },
+    "Karma": {
+      "description": "Cute little dog",
+      "user_id": 3,
+      "name": "Karma",
+      "img": "/data/img/dog4.jpg"
+    }
+  }
 }

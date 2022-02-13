@@ -1,103 +1,145 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sign up to Pet Matcher</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" type="text/css" href="../css/login.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel = "icon" href = 
-    "data/img/logo.png" 
-    type = "image/x-icon">   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link rel="icon" href="data/img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./src/css/style.css" />
-</head>
+  </head>
 
-<body>
-    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav-placeholder">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
-            <img src="data/img/logo.png">
-            Pet Matcher
-          </a>
-  
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-  
-        <div id="navbarBasicExample" class="navbar-menu">
-  
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary" href="signup.html">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light" href="login.html">
-                  Sign In
-                </a>
-              </div>
+  <body>
+    <nav
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+      id="nav-placeholder"
+    >
+      <div class="navbar-brand">
+        <a
+          class="navbar-item"
+          href="index.html"
+          style="
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+              sans-serif;
+          "
+        >
+          <img src="data/img/logo.png" />
+          Pet Matcher
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="signup.html">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light" href="login.html"> Sign In </a>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
     <section class="section custom-bg">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="column is-4 is-offset-4">
-                    <h3 class="title has-text-black">Sign Up</h3>
-                    <hr class="login-hr">
-                    <p class="subtitle has-text-black">Please create an account to get access to Pet Matcher.</p>
-                    <div class="box">
-                      
-                        <figure class="avatar">
-                            <img src="data/img/loveAnimal.jpg">
-                        </figure>
-                        <figure class="avatar">
-                            <img src="data/img/createAnAccount.jpg">
-                        </figure>
-                        <p class="subtitle has-text-black"> <br/> </p>
-                        <p class="subtitle has-text-black"> </p>
-                        <p class="subtitle has-text-black">Please enter your name:</p>
-                        <form action="signup" method="post">
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input is-large" type="text" placeholder="Your Name" autofocus="" required>
-                                </div>
-                            </div>
-                            <p class="subtitle has-text-black"> </p>
-                            <p class="subtitle has-text-black"> </p>
-                            <p class="subtitle has-text-black">Please enter your phone number:</p>
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input is-large" type="text" placeholder="Your number" autofocus="" required>
-                                </div>
-                            </div>
-                            <button class="button is-block is-info is-large is-fullwidth">Create Account <i class="fa fa-sign-in" aria-hidden="true"></i></button>
-                        </form>
-                    </div>
-                    <!--p class="has-text-black">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-4 is-offset-4">
+            <h3 class="title has-text-black">Sign Up</h3>
+            <hr class="login-hr" />
+            <p class="subtitle has-text-black">
+              Please create an account to get access to Pet Matcher.
+            </p>
+            <div class="box">
+              <figure class="avatar">
+                <img src="data/img/loveAnimal.jpg" />
+              </figure>
+              <figure class="avatar">
+                <img src="data/img/createAnAccount.jpg" />
+              </figure>
+              <p class="subtitle has-text-black"><br /></p>
+              <p class="subtitle has-text-black"></p>
+              <p class="subtitle has-text-black">Please enter your name:</p>
+              <form action="signup" method="post">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-large"
+                      type="text"
+                      placeholder="Your Name"
+                      autofocus=""
+                      required
+                      id="username"
+                    />
+                  </div>
+                </div>
+                <p class="subtitle has-text-black"></p>
+                <p class="subtitle has-text-black"></p>
+                <p class="subtitle has-text-black">
+                  Please enter your phone number:
+                </p>
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="input is-large"
+                      type="text"
+                      placeholder="Your number"
+                      autofocus=""
+                      required
+                      id="phone-number"
+                    />
+                  </div>
+                </div>
+                <button class="button is-block is-info is-large is-fullwidth">
+                  Create Account
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+            <!--p class="has-text-black">
                         <a class="black-link" href="login.html">You already have an account?</a> &nbsp;&nbsp;
                     </p-->
-                    <a class="link-button" href="signup.html">
-                      <button class="button is-block is-info">
-                        You already have an account?
-                      </button>
-                    </a>
-                </div>
-            </div>
+            <a class="link-button" href="signup.html">
+              <button class="button is-block is-info">
+                You already have an account?
+              </button>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
-    <script defer>
+    <script async="false">
       const form = document.querySelector("form");
       form.onsubmit = (e) => {
         // e.preventDefault();
@@ -114,19 +156,20 @@
           return false;
         }
 
-        const data = { username: username, phoneNumber: phoneNumber };
+        const data = { username, phoneNumber };
         console.log(data);
 
-        let response = fetch("signup", {
+        let response = fetch("/signup", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
+        }).catch((err) => {
+          console.log(err);
         });
       };
     </script>
     <!-- <script async type="text/javascript" src="s/js/bulma.js"></script> -->
-</body>
-
+  </body>
 </html>

@@ -1,7 +1,7 @@
 {
   "users": {
-    "Abigail": { "phone": 1111111111 },
-    "Bruno": { "phone": 2222222222 },
-    "Charlie": { "phone": 3333333333 }
+    "Abigail": { "phone": 1111111111, "likes": [], "dislikes": [] },
+    "Bruno": { "phone": 2222222222, "likes": [], "dislikes": [] },
+    "Charlie": { "phone": 3333333333, "likes": [], "dislikes": [] }
   }
 }
