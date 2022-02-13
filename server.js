@@ -38,8 +38,26 @@ app.use(express.static("public"));
 // });
 
 app.post("/login", (req, res) => {
-  console.log(req);
-  res.redirect("/app.html");
+  console.log(req.query, req.body);
+  const { username } = req.body;
+  const nameInDB = true;
+  if (nameInDB) {
+    res.redirect("/app.html");
+  } else {
+    // TODO make an error, or just create a account lmao
+    res.redirect("/login.html");
+  }
+});
+app.post("/signup", (req, res) => {
+  console.log(req.query, req.body);
+  const { username, phoneNumer } = req.body;
+  const validData = true;
+  if (nameInDB) {
+    res.redirect("/app.html");
+  } else {
+    // TODO make an error, or just create a account lmao
+    res.redirect("/signup.html");
+  }
 });
 
 const port = process.env.PORT || 5000;

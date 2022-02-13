@@ -14,8 +14,6 @@
       href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
       rel="stylesheet"
     />
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" type="text/css" href="../css/login.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
@@ -90,8 +88,8 @@
                       type="text"
                       placeholder="Your Name"
                       autofocus=""
-                      id="username" 
-                      name="username" 
+                      id="username"
+                      name="username"
                     />
                   </div>
                 </div>
@@ -108,6 +106,28 @@
         </div>
       </div>
     </section>
+    <script defer>
+      const form = document.querySelector("form");
+      form.onsubmit = (e) => {
+        // e.preventDefault();
+        const username = document.querySelector("#username").value;
+        if (username === undefined || username === null) {
+          console.error("INVALID USERNAME");
+          alert("Please enter a username!");
+          return false;
+        }
+        const data = { username: username };
+        console.log(data);
+
+        let response = fetch("login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+      };
+    </script>
     <!-- <script async type="text/javascript" src="s/js/bulma.js"></script> -->
   </body>
 </html>
