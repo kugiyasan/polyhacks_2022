@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const dbms = require("./dbms");
 
 const app = express();
 
@@ -40,8 +41,8 @@ app.use(express.static("public"));
 app.post("/login", (req, res) => {
   console.log(req.query, req.body);
   const { username } = req.body;
-  const nameInDB = true;
-  if (nameInDB) {
+  const user = dbms.getUser(username);
+  if (user != null) {
     res.redirect("/app.html");
   } else {
     // TODO make an error, or just create a account lmao
